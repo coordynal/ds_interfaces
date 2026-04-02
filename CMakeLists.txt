@@ -19,10 +19,15 @@ set(srv_files
 	"srv/NewConnection.srv"
 )
 
+set(type_files
+	"types/StateType.msg"
+)
+
 rosidl_generate_interfaces(
     ${PROJECT_NAME}
     ${msg_files}
     ${srv_files}
+    ${type_files}
 )
 
 if(BUILD_TESTING)
