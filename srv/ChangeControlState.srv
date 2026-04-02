@@ -1,0 +1,11 @@
+# defines behavior for when an entity wants to change the control state of the system
+# usually done on the master side and also WIP
+
+uint8 DISABLED=0
+uint8 ENABLED=1
+uint8 ESTOP=2
+uint8 UNKNOWN=3
+
+uint8 control_state
+---
+bool ok

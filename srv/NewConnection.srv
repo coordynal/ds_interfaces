@@ -1,0 +1,4 @@
+# defines behavior for when a slave comes online and connects to a master
+string slave_id 0
+---
+bool ok
