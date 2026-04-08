@@ -30,6 +30,13 @@ rosidl_generate_interfaces(
     ${type_files}
 )
 
+# Export custom C++ headers for downstream packages.
+install(
+	FILES src/Constants.hpp
+	DESTINATION include/${PROJECT_NAME}
+)
+
+
 if(BUILD_TESTING)
 	find_package(ament_lint_auto REQUIRED)
 	# the following line skips the linter which checks for copyrights
