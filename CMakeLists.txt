@@ -36,6 +36,8 @@ install(
 	DESTINATION include/${PROJECT_NAME}
 )
 
+ament_export_include_directories(include)
+
 
 if(BUILD_TESTING)
 	find_package(ament_lint_auto REQUIRED)
