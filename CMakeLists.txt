@@ -24,10 +24,10 @@ set(type_files
 )
 
 rosidl_generate_interfaces(
-    ${PROJECT_NAME}
-    ${msg_files}
-    ${srv_files}
-    ${type_files}
+	${PROJECT_NAME}
+	${msg_files}
+	${srv_files}
+	${type_files}
 )
 
 # Export custom C++ headers for downstream packages.
@@ -37,7 +37,6 @@ install(
 )
 
 ament_export_include_directories(include)
-
 
 if(BUILD_TESTING)
 	find_package(ament_lint_auto REQUIRED)
