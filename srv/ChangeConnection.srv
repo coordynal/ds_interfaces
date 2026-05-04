@@ -1,4 +1,5 @@
 # defines behavior for when a slave comes online and connects to a master
 string slave_id 0
+bool is_connect 1 # 1 for connecting, 0 for disconnecting
 ---
 bool ok

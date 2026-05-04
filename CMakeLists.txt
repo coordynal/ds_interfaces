@@ -15,8 +15,9 @@ set(msg_files
 )
 
 set(srv_files
+	"srv/ChangeConnection.srv"
 	"srv/ChangeControlState.srv"
-	"srv/NewConnection.srv"
+	"srv/RequestSlaveList.srv"
 )
 
 set(type_files
