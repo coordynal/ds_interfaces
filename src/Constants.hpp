@@ -5,7 +5,7 @@
 #define TOPIC_MASTER_CONNECT "master_node/connect"
 
 #define SERVICE_CHANGE_CONTROL_STATE "master_node/change_control_state"
-#define SERVICE_NEW_CONNECTION "master_node/new_connection"
+#define SERVICE_CHANGE_CONNECTION "master_node/change_connection"
 #define SERVICE_REQUEST_SLAVE_LIST "master_node/request_slave_list"
 
 enum ControlState {
