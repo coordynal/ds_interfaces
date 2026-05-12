@@ -1,0 +1,11 @@
+# for any interfaces wanting to modify a slave's connection state, such as enabling/disabling or estop
+uint8 DISABLED=0
+uint8 ENABLED=1
+uint8 ESTOP=2
+uint8 UNKNOWN=3
+
+string slave_id "" # target to change the state for. If empty, applies to all slaves
+uint8 owner_id 0 # master id that owns the slave. maybe useful later but currently unused
+uint8 control_state # new control state to set for the slave
+---
+bool ok

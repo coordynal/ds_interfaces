@@ -11,12 +11,13 @@ find_package(rosidl_default_generators REQUIRED)
 set(msg_files
 	"msg/Heartbeat.msg"
 	"msg/ChangeState.msg"
-	"msg/Connect.msg"
+	"msg/MasterBroadcast.msg"
 )
 
 set(srv_files
 	"srv/ChangeConnection.srv"
 	"srv/ChangeControlState.srv"
+	"srv/RequestEditConnection.srv"
 	"srv/RequestSlaveList.srv"
 )
 
