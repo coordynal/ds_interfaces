@@ -10,7 +10,7 @@
 #include "ds_interfaces/srv/request_edit_connection.hpp"
 #include "ds_interfaces/srv/request_slave_list.hpp"
 
-namespace ds_helpers {
+namespace ds_interfaces {
     // Primary template
     template <typename T> static rclcpp::QoS getQoS() {
         return rclcpp::QoS(rclcpp::KeepLast(10));
@@ -57,4 +57,4 @@ namespace ds_helpers {
 
         return node->create_subscription<T>(getTopicName<T>(), getQoS<T>(), callback);
     }
-} // namespace ds_helpers
+} // namespace ds_interfaces
