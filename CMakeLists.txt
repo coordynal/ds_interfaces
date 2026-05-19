@@ -12,6 +12,7 @@ set(msg_files
 	"msg/Heartbeat.msg"
 	"msg/ChangeState.msg"
 	"msg/MasterBroadcast.msg"
+	"msg/StringArray.msg"
 )
 
 set(srv_files
@@ -35,6 +36,7 @@ rosidl_generate_interfaces(
 # Export custom C++ headers for downstream packages.
 install(
 	FILES src/Constants.hpp
+	FILES src/TopicHelpers.hpp
 	DESTINATION include/${PROJECT_NAME}
 )
 
