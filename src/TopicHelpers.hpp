@@ -49,7 +49,7 @@ namespace ds_interfaces {
     }
 
     template <typename T>
-    static rclcpp::Subscription<T>::SharedPtr
+    static typename rclcpp::Subscription<T>::SharedPtr
     newSubscription(rclcpp::Node* node, std::function<void(const typename T::SharedPtr)> callback) {
         if (node == nullptr) {
             throw std::runtime_error("Node pointer is null");
